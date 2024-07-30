@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 215.29deg 100% 96.67%;
+  --card: 0 0 100%;
+  --secondary: 243.11 100% 62.16%;
+  --foreground: 212.05 97.78% 17.65%;
+  --primary: 212.05 97.78% 17.65%;
+  --primary-foreground: 210 40% 98%;
+  /* --muted-foreground: 215.4 16.3% 46.9%; */
+
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 240deg 1.94% 49.61%;
+
+  --border: 214.3 31.8% 81.4%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 62.8% 30.6%;
+}
+
+body {
+  
+  @apply scroll-smooth bg-background text-foreground font-normal text-sm;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
